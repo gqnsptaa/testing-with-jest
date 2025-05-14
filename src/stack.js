@@ -11,6 +11,6 @@ exports.pop = function () {
 };
 
 exports.peek = function () {
-    return stack[0]; // OBS: felaktigt med flit
+    return _.last(stack); // OBS: felaktigt med flit
 };
 
