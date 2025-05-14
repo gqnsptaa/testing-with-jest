@@ -15,3 +15,7 @@ test('peek with many elements returns top element', () => {
   expect(stack.peek()).toBe("second"); // Fungerar ej pga bugg
 });
 
+test('pop on empty stack returns undefined', () => {
+    expect(stack.pop()).toBeUndefined();
+});
+
