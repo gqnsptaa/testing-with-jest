@@ -7,8 +7,13 @@ window.onload = function () {
   const display = document.getElementById('top_of_stack');
 
   pop.addEventListener("click", function () {
-    alert("Tog bort " + stack.pop());
-  });
+  const removed = stack.pop();
+  alert("Tog bort " + removed);
+  const next = stack.peek();
+  const display = document.getElementById('top_of_stack');
+  display.textContent = (next === undefined ? 'n/a' : next);
+});
+
 
   push.addEventListener("click", function () {
     let x = prompt("Vad ska vi lägga på stacken?");
