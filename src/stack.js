@@ -14,3 +14,5 @@ exports.peek = function () {
     return _.last(stack); // OBS: felaktigt med flit
 };
 
+exports.size = function () { return stack.length; };
+
